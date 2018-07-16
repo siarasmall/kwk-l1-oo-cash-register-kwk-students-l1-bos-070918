@@ -4,6 +4,10 @@ class AmazonTransaction
     @total = 0
     @items = [ ]
     @discount = default_argument
-    return @total
   end
+  
+  def total
+    return @total
+  end 
+  
 end
