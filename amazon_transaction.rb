@@ -1,5 +1,5 @@
 # Code your cash register here!
-class x
+class X
   def initialization
     total = 0
   end
