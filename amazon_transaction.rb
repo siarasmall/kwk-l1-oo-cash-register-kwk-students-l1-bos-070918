@@ -16,8 +16,8 @@ class AmazonTransaction
     @items << title.to_s
   end 
   
-  def apply_discount
-    @total = @total * ((100 - @discount) / 100)
+  def apply_discount(total)
+    @total = total * ((100 - @discount) / 100)
     return @total
   end 
   
