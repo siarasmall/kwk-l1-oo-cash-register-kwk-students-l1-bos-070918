@@ -11,8 +11,8 @@ class AmazonTransaction
     return @total
   end 
   
-  def add_item(title, price, quantity = 0)
-    @total += price.to_f
+  def add_item(title, price, quantity = 1)
+    @total += price.to_f * quantity.to_f
     @items << title.to_s
   end 
   
