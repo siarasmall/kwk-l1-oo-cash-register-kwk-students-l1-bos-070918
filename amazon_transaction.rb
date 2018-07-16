@@ -1,4 +1,4 @@
 # Code your cash register here!
-
-total = 0
-
+def initialize
+  total = 0
+end
