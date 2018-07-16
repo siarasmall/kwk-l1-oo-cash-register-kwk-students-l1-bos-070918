@@ -16,4 +16,8 @@ class AmazonTransaction
     @items << title.to_s
   end 
   
+  def apply_discount
+    @total = @total / @discount
+  end 
+  
 end
