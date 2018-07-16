@@ -15,6 +15,7 @@ class AmazonTransaction
     @total += price.to_f
     return @total
     @items << title
+    return @items
   end 
   
 end
