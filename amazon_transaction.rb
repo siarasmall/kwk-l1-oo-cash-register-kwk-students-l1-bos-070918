@@ -1,7 +1,7 @@
 # Code your cash register here!
 class AmazonTransaction
   attr_accessor :total, :items, :discount
-  def initialize(discount_default = 0)
+  def initialize(discount_default = 20)
     @total = 0
     @items = [ ]
     @discount = discount_default
@@ -17,7 +17,7 @@ class AmazonTransaction
   end 
   
   def apply_discount
-    @total = @total - (@total * (0.@discount.to_f))
+    @total = @total * ((100 - @discount) / 100)
   end 
   
 end
